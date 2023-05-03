@@ -1,0 +1,26 @@
+<input type="text" [disabled]="!flag">
+<div [innerText]="name"> </div>
+<h1>{{name+" ahmed"}} {{id}}</h1>
+<input type="text" [value]="name">
+<img [src]="imgsrc"  [alt]="name">
+<input #t2 type="text">
+<button (click)="save(t2.value)" ></button>{{id}}
+<!-- <button (click)="myfun()" >Save me</button> -->
+<input #b1  type="text"(blur)="changename($event.target)" (keyup.enter)="changename($event.target)">{{id}}
+{{std.id}}: {{std.name}}: {{std.age}}
+
+<table border="2">
+    <tr>
+        <td>
+            id
+        </td>
+        <td>
+           name
+        </td>
+    </tr>
+    <tr>
+        <td [attr.colspan]="n">
+            ssd
+        </td>
+    </tr>
+</table>
